@@ -8,6 +8,20 @@ const getAllUsers = (req, res) => {
     })
 }
 
+const confirmLogin = (req, res) => {
+    console.log(req.body);
+    User.findOne({
+        where: {
+            username: req.body.username,
+            password: req.body.password
+        }
+    })
+    .then(foundUser => {
+        res.json(foundUser)
+    })
+}
+
 module.exports = {
-    getAllUsers
+    getAllUsers,
+    confirmLogin
 }
