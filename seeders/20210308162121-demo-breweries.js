@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert("Brewerys", [
+    return queryInterface.bulkInsert("Breweries", [
       {
         name: "Abita Brewing Co.",
         address: "Covington, Louisiana, United States",
@@ -72,6 +72,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete('Brewerys', null, {});
+    await queryInterface.bulkDelete('Breweries', null, {});
   }
 };
