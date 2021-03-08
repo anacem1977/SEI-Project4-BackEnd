@@ -1,39 +1,27 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Substyles', {
+    await queryInterface.createTable('Brands', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      styleId: {
+      substyleId: {
         type: Sequelize.INTEGER
       },
-      substyle: {
+      brand: {
         type: Sequelize.STRING
       },
-      description: {
-        type: Sequelize.TEXT
+      breweryId: {
+        type: Sequelize.INTEGER
       },
       abv: {
         type: Sequelize.STRING
       },
-      ibu: {
-        type: Sequelize.STRING
-      },
-      glassware: {
-        type: Sequelize.STRING
-      },
-      pairing: {
-        type: Sequelize.STRING
-      },
-      flavor: {
-        type: Sequelize.STRING
-      },
-      color: {
-        type: Sequelize.STRING
+      likes: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
@@ -46,6 +34,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Substyles');
+    await queryInterface.dropTable('Brands');
   }
 };
