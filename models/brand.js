@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       Brand.belongsTo(models.Substyle, {
         foreignKey: "substyleId"
       }),
-      Brand.belongsTo(model.Brewery, {
+      Brand.belongsTo(models.Brewery, {
         foreignKey: "breweryId"
       })
     }
