@@ -9,7 +9,7 @@ const getAllUsers = (req, res) => {
 }
 
 const confirmLogin = (req, res) => {
-    console.log(req.body);
+    console.log(req.params);
     User.findOne({
         where: {
             username: req.body.username,
@@ -18,6 +18,13 @@ const confirmLogin = (req, res) => {
     })
     .then(foundUser => {
         res.json(foundUser)
+    })
+}
+
+const signUp = (req, res) => {
+    User.create(req.body)
+    .then(newUser => {
+        res.json(newUser)
     })
 }
 
