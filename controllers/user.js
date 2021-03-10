@@ -29,11 +29,12 @@ const signUp = (req, res) => {
 }
 
 const deleteUser = (req, res) => {
+    console.log(req.body)
     User.destroy({
         where: {id: req.params.index}
     })
     .then(() => {
-        res.json()
+        res.status(constants.SUCCESS).send("successfully deleted")
     })
 
 }

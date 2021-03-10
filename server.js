@@ -26,6 +26,8 @@ app.use((req, res, next) => {
     next();
   });
 
+app.use(methodOverride("_method"));
+
 app.use("/origin", routes.origin);
 app.use("/substyle", routes.substyle);
 app.use("/brand", routes.brand);
