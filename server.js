@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const methodOverride = require("method-override");
 const routes = require ("./routes");
 
 const origin= require("./models/origin.js");

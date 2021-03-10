@@ -28,8 +28,19 @@ const signUp = (req, res) => {
     })
 }
 
+const deleteUser = (req, res) => {
+    User.destroy({
+        where: {id: req.params.index}
+    })
+    .then(() => {
+        res.json()
+    })
+
+}
+
 module.exports = {
     getAllUsers,
     confirmLogin,
-    signUp
+    signUp,
+    deleteUser
 }
