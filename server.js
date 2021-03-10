@@ -8,6 +8,7 @@ const substyle = require("./models/substyle.js");
 const brand = require("./models/brand.js");
 const brewery = require("./models/brewery.js");
 const user = require("./models/user.js");
+const bodyParser = require('body-parser');
 
 const corsOptions = {
   origin: ['http://localhost:3000'], //port for React app
@@ -17,6 +18,7 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions))
+app.use(bodyParser.json());
 
 app.use((req, res, next) => {
     console.log("I run for all routes");

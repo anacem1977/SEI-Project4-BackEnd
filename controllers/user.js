@@ -9,7 +9,7 @@ const getAllUsers = (req, res) => {
 }
 
 const confirmLogin = (req, res) => {
-    console.log(req.params);
+    console.log(req.body);
     User.findOne({
         where: {
             username: req.body.username,
@@ -30,5 +30,6 @@ const signUp = (req, res) => {
 
 module.exports = {
     getAllUsers,
-    confirmLogin
+    confirmLogin,
+    signUp
 }
