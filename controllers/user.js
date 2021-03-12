@@ -59,5 +59,6 @@ module.exports = {
     getAllUsers,
     confirmLogin,
     signUp,
-    deleteUser
+    deleteUser,
+    editProfile
 }
