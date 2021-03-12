@@ -28,15 +28,31 @@ const signUp = (req, res) => {
     })
 }
 
+const editProfile = (req, res) => { //done
+    console.log(req.body);
+    User.update(req.body, {
+        where: {id: req.params.index},
+        returning: true
+    })
+    .then(editUser => {
+        res.json(editUser);
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+}
+
 const deleteUser = (req, res) => {
     console.log(req.body)
     User.destroy({
         where: {id: req.params.index}
     })
     .then(() => {
-        res.status(constants.SUCCESS).send("successfully deleted")
+        res.status(200).send("successfully deleted")
     })
-
+    .catch((err) => {
+        console.log(err)
+    })
 }
 
 module.exports = {
