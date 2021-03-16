@@ -733,6 +733,48 @@ module.exports = {
         abv: "5.5",
         likes: 0
       },
+      {
+        substyleId: 27,
+        brand: "Pale Ale",
+        breweryId: 25,
+        abv: "5.6",
+        likes: 0
+      },
+      {
+        substyleId: 27,
+        brand: "Zombie Dust",
+        breweryId: 33,
+        abv: "6.2",
+        likes: 0
+      },
+      {
+        substyleId: 28,
+        brand: "Belgian Session",
+        breweryId: 6,
+        abv: "4.3",
+        likes: 0
+      },
+      {
+        substyleId: 28,
+        brand: "Blue Moon Rounder Belgian-Style Pale",
+        breweryId: 8,
+        abv: "5.6",
+        likes: 0
+      },
+      {
+        substyleId: 29,
+        brand: "Taddy Porter",
+        breweryId: 26,
+        abv: "5.0",
+        likes: 0
+      },
+      {
+        substyleId: 29,
+        brand: "London Porter",
+        breweryId: 62,
+        abv: "5.4",
+        likes: 0
+      },
     ],{});
   },
  

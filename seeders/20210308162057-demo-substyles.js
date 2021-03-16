@@ -289,6 +289,28 @@ module.exports = {
         flavor: "Hop flavor and bitterness are very low to low.",
         color: "4-5.5 SRM"
       },
+      {
+        styleId: 10,
+        substyle: "American",
+        description: "Originally British in origin, this style is now popular worldwide and the use of local or imported ingredients produces variances in character from region to region. American versions tend to be cleaner and hoppier than British versions, which are usually more malty, buttery, aromatic, and balanced. Pale Ales range in color from deep gold to medium amber.",
+        abv: "4.5-6.5%",
+        ibu: "25-30",
+        glassware: "Pint Glass",
+        pairing: "Mild or Medium Cheddar, Roasted or Grilled Meats, Apple Pie",
+        flavor: "Hop bitterness is medium to medium-high",
+        color: "6-14 SRM"
+      },
+      {
+        styleId: 10,
+        substyle: "Belgian",
+        description: "The Belgian brewing scene is littered with Belgian Pales, which were initially brewed to compete with Pilseners during the WWII era. Traditionally, they differ from other regional Pale Ales by being less bitter, using aged hops for a delicate hop finish, and having sweet to toasty malt overtones. They should be decanted properly, leaving the yeast in the bottle. This will showcase their brilliant color range from pale straw yellow to various amber hues. Most will be crowned with thick, clinging, rocky white heads.",
+        abv: "4.5-7.0%",
+        ibu: "20-30",
+        glassware: "Tulip",
+        pairing: "Taleggio Cheese, Tempura Fried Fish and Chips, Bread Pudding",
+        flavor: "Hop bitterness is low but noticeable",
+        color: "6-12 SRM"
+      },
     ], {});
   },
 

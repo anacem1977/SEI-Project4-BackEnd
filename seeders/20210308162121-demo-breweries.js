@@ -309,6 +309,11 @@ module.exports = {
         address: "Bremen, Germany",
         url: "becks.de"
       },
+      {
+        name: "Fuller's",
+        address: "London, England, United Kingdom",
+        url: "fullers.co.uk"
+      },
     ],{});
   },
 
