@@ -185,7 +185,7 @@ module.exports = {
         description: "A classic German-style Pilsner is straw to pale in color with a malty sweetness that can be perceived in aroma and flavor. Perception of hop bitterness is medium to high. Noble-type hop aroma and flavor are moderate and quite obvious. Distinctly different from the Bohemian-style pilsner, this style is lighter in color and body and has a lower perceived hop bitterness.",
         abv: "4.6-5.3%",
         ibu: "25-40",
-        glassware: "Flute",
+        glassware: "Flute Glass",
         pairing: "White Cheddar, Shelfish, Chicken, Saldas, Shortbread cookies",
         flavor: "Hop bitterness is medium to high",
         color: "3-4 SRM"
@@ -284,7 +284,7 @@ module.exports = {
         description: "“Helles” means “pale in color,” as these beers are often golden. The German-style Helles lager is a bit rounder or fuller-bodied than light lager and even all-malt pilsners. Clean and crisp, this is a refreshing beer with substance.",
         abv: "4.8-5.6%",
         ibu: "18-25",
-        glassware: "Flute",
+        glassware: "Flute Glass",
         pairing: "Colby Cheese, Samosas, Baklava",
         flavor: "Hop flavor and bitterness are very low to low.",
         color: "4-5.5 SRM"
@@ -310,6 +310,17 @@ module.exports = {
         pairing: "Taleggio Cheese, Tempura Fried Fish and Chips, Bread Pudding",
         flavor: "Hop bitterness is low but noticeable",
         color: "6-12 SRM"
+      },
+      {
+        styleId: 11,
+        substyle: "English",
+        description: "It was the first truly engineered beer, catering to the public's taste, playing a critical role in quenching the thirst of the UK's Industrial Revolution and contributing to the rise of today's mega-breweries. Modern-day Porters are typically brewed using a pale malt base with the addition of black malt, crystal, chocolate, or smoked brown malt.",
+        abv: "4.5-7.0%",
+        ibu: "20-30",
+        glassware: "Pint Glass",
+        pairing: "Gruyere Cheese, Roasted or Grilled Meats, ChocolatePeanut Butter cookies",
+        flavor: "Hop bitterness is medium",
+        color: "30-35 SRM"
       },
     ], {});
   },
