@@ -3,7 +3,8 @@ const router = express.Router();
 const ctrl = require('../controllers');
 
 router.get('/', ctrl.brand.getAllBrands);
-// router.put("/:index", ctrl.user.addLike)
+router.get('/:index', ctrl.brand.getOneBrand);
+router.put("/:index", ctrl.brand.addLike)
 
 
 module.exports = router;
