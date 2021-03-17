@@ -12,7 +12,8 @@ const user = require("./models/user.js");
 const bodyParser = require('body-parser');
 
 const corsOptions = {
-  origin: ['http://localhost:3000'], //port for React app
+  //origin: ['http://localhost:3000'], //port for React app
+  origin: ['http://beer-encyclopaedia.surge.sh'], //port for React app
   methods: "GET,POST,PUT,DELETE",
   credentials: true, //allows session cookies to be sent back and forth
   optionsSuccessStatus: 200 //legacy browsers
