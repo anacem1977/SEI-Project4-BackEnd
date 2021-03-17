@@ -17,6 +17,7 @@ const corsOptions = {
   methods: "GET,POST,PUT,DELETE",
   credentials: true, //allows session cookies to be sent back and forth
   optionsSuccessStatus: 200 //legacy browsers
+  
 }
 
 app.use(cors(corsOptions))
@@ -26,6 +27,15 @@ app.use((req, res, next) => {
     console.log("I run for all routes");
     next();
   });
+
+  app.use((req, res, next) => {
+    res.setHearder("Access-Control-Allow-Origin", "http://beer-encyclopaedia.surge.sh");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+  })
 
 app.use(methodOverride("_method"));
 
