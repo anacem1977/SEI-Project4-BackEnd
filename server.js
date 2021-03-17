@@ -29,7 +29,7 @@ app.use((req, res, next) => {
   });
 
   app.use((req, res, next) => {
-    res.setHearder("Access-Control-Allow-Origin", "http://beer-encyclopaedia.surge.sh");
+    res.setHeader("Access-Control-Allow-Origin", "http://beer-encyclopaedia.surge.sh");
     res.header(
       "Access-Control-Allow-Headers",
       "Origin, X-Requested-With, Content-Type, Accept"
